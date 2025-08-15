@@ -40,16 +40,47 @@ Each file represents weather metrics for an Indian city. Key columns include:
 
 | ...and more.
 
----
+## 📂 Raw Data Overview
+
+| Attribute         | Details        |
+| ----------------- | -------------- |
+| **Files**         | 4344 CSV Files |
+| **Total Size**    | ~97 GB         |
+| **Time Period**   | 2010 – 2024    |
+| **Total Rows**    | 52 CR+         |
+| **Total Columns** | 21             |
 
 ## 🛠️ Technologies Used
 
-| Category           | Tools / Frameworks                |
-| ------------------ | --------------------------------- |
-| **Big Data Tools** | Apache Spark, AWS Glue, Amazon S3 |
-| **Storage**        | AWS S3,                           |
-| **Orchestration**  | AWS Glue Crawlers                 |
-| **Data Querying**  | AWS Athena,                       |
-| **Visualization**  | Power BI                          |
-| **Language**       | PySpark, SQL, Python              |
-| **Cloud**          | AWS (Glue, S3, Athena)            |
+## 📊 Project Tech Stack
+
+| Category                               | Tools / Frameworks                            |
+| -------------------------------------- | --------------------------------------------- |
+| **AWS Cloud Service**                  | AWS S3, AWS Glue, AWS Athena, AWS EMR (Spark) |
+| **Programming Language**               | PySpark, SQL                                  |
+| **Automation & CI/CD**                 | Terraform, GitHub Actions                     |
+| **Project Management & Collaboration** | Jira, GitHub                                  |
+| **Visualization Tool**                 | Power BI                                      |
+
+## 📊 Architecture Diagrams
+
+![Architecture Diagram](Architecture_Diagram.png)
+
+## Key Performance Indicators (KPIs)
+
+- **Solar Potential Score:** Average of `cloud_cover`, `cloud_cover_low`, `cloud_cover_mid`, `cloud_cover_high` to measure solar energy potential.
+- **Yearly Climate Trends:** Track `temperature_2m` over `year`, `month`, and `date` to analyze temperature patterns.
+- **Rainfall Risk Score:** Evaluate rainfall risk using `state`, `city`, `rain`, and `precipitation`.
+- **Average Humidity:** Measure `relative_humidity_2m` across `year` for humidity trends.
+- **Monthly Temperature Anomaly:** Compare current monthly average `temperature_2m` with historical averages to detect unusual temperature shifts.
+- **Ideal Travel Days:** Count days meeting comfortable `temperature_2m`, `relative_humidity_2m`, and `rain` thresholds for tourism planning.
+- **Yearly Precipitation Trend:** Measure total annual rainfall using `rain` and `precipitation` to track wet/dry year patterns.
+
+---
+
+## 📈 Dashboard's
+
+Below is a preview of our interactive weather analytics dashboard:
+
+![Dashboard - Page 1](dashboard/page1.jpg)
+![Dashboard - Page 2](dashboard/page2.jpg)
